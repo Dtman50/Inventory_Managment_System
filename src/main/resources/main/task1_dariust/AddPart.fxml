@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inHouseAddPartPane" prefHeight="650.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.task1_dariust.AddPartController">
+   <Label fx:id="addPartLabel" layoutX="68.0" layoutY="59.0" text="Add Part">
+      <font>
+         <Font name="Arial Black" size="13.0" />
+      </font>
+   </Label>
+   <RadioButton fx:id="inHouseRadio" layoutX="194.0" layoutY="60.0" mnemonicParsing="false" onAction="#onInHouseAddPart" prefHeight="18.0" prefWidth="91.0" selected="true" text="In-House" toggleGroup="$tGroup">
+      <font>
+         <Font name="Arial" size="13.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="tGroup" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="outsourcedRadio" layoutX="379.0" layoutY="60.0" mnemonicParsing="false" onAction="#onOutsourcedAddPart" text="Outsourced" toggleGroup="$tGroup">
+      <font>
+         <Font name="Arial" size="13.0" />
+      </font>
+   </RadioButton>
+   <Label fx:id="inHouseMinLabel" layoutX="379.0" layoutY="317.0" text="Min" />
+   <TextField fx:id="inHouseMinTF" layoutX="432.0" layoutY="313.0" />
+   <Button fx:id="inHouseSaveBtn" layoutX="362.0" layoutY="435.0" mnemonicParsing="false" onAction="#SaveBtn" text="Save" />
+   <Button fx:id="inHouseCancelBtn" layoutX="432.0" layoutY="435.0" mnemonicParsing="false" onAction="#CancelBtn" text="Cancel" />
+   <Label fx:id="inHouseCompanyName" layoutX="92.0" layoutY="362.0" prefHeight="17.0" prefWidth="91.0" text="Company Name" visible="false" />
+   <Label fx:id="inHouseIDLabel" layoutX="92.0" layoutY="136.0" prefHeight="17.0" prefWidth="91.0" text="ID" />
+   <Label fx:id="inHouseNameLabel" layoutX="92.0" layoutY="179.0" prefHeight="17.0" prefWidth="91.0" text="Name" />
+   <Label fx:id="inHouseInvLabel" layoutX="92.0" layoutY="226.0" prefHeight="17.0" prefWidth="91.0" text="Inv #" />
+   <Label fx:id="inHousePriceLabel" layoutX="92.0" layoutY="274.0" prefHeight="17.0" prefWidth="91.0" text="Price/Cost" />
+   <Label fx:id="inHouseMaxLabel" layoutX="92.0" layoutY="318.0" prefHeight="17.0" prefWidth="91.0" text="Max" />
+   <Label fx:id="inHouseMachineIDLabel" layoutX="92.0" layoutY="362.0" prefHeight="17.0" prefWidth="91.0" text="Machine ID" />
+   <TextField fx:id="inHouseIDTF" disable="true" layoutX="194.0" layoutY="132.0" promptText="Auto Gen- Disabled">
+      <font>
+         <Font name="Arial Bold Italic" size="13.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="inHouseNameTF" layoutX="194.0" layoutY="175.0" />
+   <TextField fx:id="inHouseInvTF" layoutX="195.0" layoutY="222.0" />
+   <TextField fx:id="inHousePriceTF" layoutX="195.0" layoutY="270.0" />
+   <TextField fx:id="inHouseMaxTF" layoutX="194.0" layoutY="314.0" />
+   <TextField fx:id="inHouseMachineID_TF" layoutX="194.0" layoutY="358.0" />
+   <TextField fx:id="inHouseCompanyNameTF" layoutX="195.0" layoutY="359.0" visible="false" />
+</AnchorPane>
